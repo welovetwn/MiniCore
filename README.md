@@ -1,2 +1,3 @@
 # MiniCore
-A minimal databound, reactive .net core (razor) example for vs code
+A minimal reactive .net core (razor) example for vs code
+
