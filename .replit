@@ -1,6 +1,4 @@
-run = "dotnet watch run --urls=http://0.0.0.0:8080"
-
-hidden = ["bin", "obj"]
+run = "dotnet run --urls=http://0.0.0.0:8080"
 
 [env]
 DOTNET_NOLOGO = "1"
@@ -17,12 +15,3 @@ requiredFiles = [".replit", "replit.nix"]
 
 [nix]
 channel = "stable-22_11"
-
-[languages.csharp]
-pattern = "**/*.cs"
-
-  [languages.csharp.languageServer]
-  start = ["OmniSharp", "--languageserver"]
-
-[deployment]
-run = ["sh", "-c", "dotnet run"]
