@@ -11,7 +11,7 @@ COPY ["MiniCore.csproj", "."]
 RUN dotnet restore "./MiniCore.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "MiniCorecsproj" -c Release -o /app/build
+RUN dotnet build "MiniCore.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "MiniCore.csproj" -c Release -o /app/publish /p:UseAppHost=false
