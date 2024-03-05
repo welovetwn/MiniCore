@@ -23,6 +23,7 @@ namespace MiniCore.Pages
 
         public void OnGet()
         {
+           //var dbclient = new Connection(DBMS.SQLite, "Data Source=wwwroot/sqlite/MiniCore.db");
            var dbclient = new Connection(DBMS.SQLite, "Data Source=wwwroot/sqlite/MiniCore.db");
            if (!dbclient.TableExists("Product"))
            {
